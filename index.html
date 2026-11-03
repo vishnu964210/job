@@ -1,0 +1,381 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Find your next career opportunity with Syntraxs Jobs.">
+  <title>Syntraxs Jobs | Find Your Future</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="background-glow glow-one"></div>
+  <div class="background-glow glow-two"></div>
+
+  <!-- Navigation -->
+  <header class="header">
+    <nav class="navbar container">
+      <a href="#" class="logo">SYNTRAXS<span>JOBS</span></a>
+
+      <button class="menu-toggle" id="menuToggle"
+        aria-label="Toggle navigation" aria-expanded="false">
+        ☰
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#jobs">Find Jobs</a>
+        <a href="#about">About</a>
+        <a href="#apply">Apply</a>
+        <button class="nav-button" id="postJobBtn">Post a Job</button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero container" id="home">
+      <div class="hero-content">
+        <div class="eyebrow">
+          <span class="live-dot"></span>
+          YOUR NEXT CAREER STARTS HERE
+        </div>
+
+        <h1>Discover Your <span>Dream Job</span></h1>
+
+        <p>
+          Explore exciting opportunities, connect with great companies
+          and take the next step in your professional journey.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#jobs" class="primary-button">Explore Jobs ↗</a>
+          <a href="#about" class="secondary-button">Learn More</a>
+        </div>
+
+        <div class="hero-stats">
+          <div><strong>500+</strong><span>Job openings</span></div>
+          <div><strong>120+</strong><span>Companies</span></div>
+          <div><strong>10K+</strong><span>Job seekers</span></div>
+        </div>
+      </div>
+
+      <!-- 3D objects -->
+      <div class="hero-visual" aria-label="Animated 3D cube and globe">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+
+        <div class="cube-container">
+          <div class="cube">
+            <div class="cube-face front">Career</div>
+            <div class="cube-face back">Growth</div>
+            <div class="cube-face right">success</div>
+            <div class="cube-face left">future</div>
+            <div class="cube-face top">Create</div>
+            <div class="cube-face bottom">Achive</div>
+          </div>
+        </div>
+
+        
+
+        <div class="floating-card card-top">
+          <span>✦</span>
+          <div><strong>Career Growth</strong><small>Build your future</small></div>
+        </div>
+
+        <div class="floating-card card-bottom">
+          <span>↗</span>
+          <div><strong>New Opportunities</strong><small>Explore what's next</small></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Search -->
+    <section class="search-section container">
+      <form class="search-panel" id="searchForm">
+        <div class="search-field">
+          <label for="jobSearch">Job title or keyword</label>
+          <input id="jobSearch" type="search"
+            placeholder="e.g. Web Developer">
+        </div>
+
+        <div class="search-field">
+          <label for="locationFilter">Location</label>
+          <input id="locationFilter" type="search"
+            placeholder="e.g. Hyderabad">
+        </div>
+
+        <div class="search-field">
+          <label for="categoryFilter">Category</label>
+          <select id="categoryFilter">
+            <option value="">All categories</option>
+            <option value="Technology">Technology</option>
+            <option value="Design">Design</option>
+            <option value="Marketing">Marketing</option>
+            <option value="Business">Business</option>
+          </select>
+        </div>
+
+        <button type="submit" class="search-button">Search Jobs</button>
+      </form>
+    </section>
+
+    <!-- Jobs -->
+    <section class="jobs-section container" id="jobs">
+      <div class="section-heading">
+        <div>
+          <span class="section-tag">CAREER OPPORTUNITIES</span>
+          <h2>Latest <span>Job Openings</span></h2>
+          <p>Find the right opportunity to grow your career.</p>
+        </div>
+        <span class="job-count" id="jobCount">0 Jobs</span>
+      </div>
+
+      <div class="job-grid" id="jobGrid">
+
+        <article class="job-card" data-category="Technology"
+          data-location="Hyderabad" data-status="Full-time">
+          <div class="job-card-top">
+            <div class="company-logo">T</div>
+            <span class="job-type">Full-time</span>
+          </div>
+          <h3>Frontend Developer</h3>
+          <p class="company-name">TechNova Solutions</p>
+          <div class="job-details">
+            <span>📍 Hyderabad</span><span>₹4–7 LPA</span>
+          </div>
+          <p class="job-description">Build modern, responsive web applications using HTML, CSS and JavaScript.</p>
+          <button class="apply-btn" data-role="Frontend Developer">Apply Now ↗</button>
+        </article>
+
+        <article class="job-card" data-category="Technology"
+          data-location="Bengaluru" data-status="Full-time">
+          <div class="job-card-top">
+            <div class="company-logo purple">D</div>
+            <span class="job-type">Full-time</span>
+          </div>
+          <h3>Python Developer</h3>
+          <p class="company-name">DataBridge Technologies</p>
+          <div class="job-details">
+            <span>📍 Bengaluru</span><span>₹5–9 LPA</span>
+          </div>
+          <p class="job-description">Develop backend applications and work with APIs and databases.</p>
+          <button class="apply-btn" data-role="Python Developer">Apply Now ↗</button>
+        </article>
+
+        <article class="job-card" data-category="Design"
+          data-location="Hyderabad" data-status="Remote">
+          <div class="job-card-top">
+            <div class="company-logo pink">C</div>
+            <span class="job-type remote">Remote</span>
+          </div>
+          <h3>UI/UX Designer</h3>
+          <p class="company-name">Creative Pixel Studio</p>
+          <div class="job-details">
+            <span>📍 Hyderabad</span><span>₹3–6 LPA</span>
+          </div>
+          <p class="job-description">Create engaging user experiences and beautiful digital interfaces.</p>
+          <button class="apply-btn" data-role="UI/UX Designer">Apply Now ↗</button>
+        </article>
+
+        <article class="job-card" data-category="Marketing"
+          data-location="Mumbai" data-status="Full-time">
+          <div class="job-card-top">
+            <div class="company-logo orange">M</div>
+            <span class="job-type">Full-time</span>
+          </div>
+          <h3>Digital Marketing Executive</h3>
+          <p class="company-name">MarketWave</p>
+          <div class="job-details">
+            <span>📍 Mumbai</span><span>₹3–5 LPA</span>
+          </div>
+          <p class="job-description">Manage digital campaigns, SEO and social media marketing.</p>
+          <button class="apply-btn" data-role="Digital Marketing Executive">Apply Now ↗</button>
+        </article>
+
+        <article class="job-card" data-category="Business"
+          data-location="Pune" data-status="Full-time">
+          <div class="job-card-top">
+            <div class="company-logo green">B</div>
+            <span class="job-type">Full-time</span>
+          </div>
+          <h3>Business Analyst</h3>
+          <p class="company-name">BrightPath Consulting</p>
+          <div class="job-details">
+            <span>📍 Pune</span><span>₹5–8 LPA</span>
+          </div>
+          <p class="job-description">Analyze business requirements and help teams make data-driven decisions.</p>
+          <button class="apply-btn" data-role="Business Analyst">Apply Now ↗</button>
+        </article>
+
+        <article class="job-card" data-category="Technology"
+          data-location="Chennai" data-status="Remote">
+          <div class="job-card-top">
+            <div class="company-logo blue">F</div>
+            <span class="job-type remote">Remote</span>
+          </div>
+          <h3>Full Stack Developer</h3>
+          <p class="company-name">FutureStack Labs</p>
+          <div class="job-details">
+            <span>📍 Chennai</span><span>₹6–10 LPA</span>
+          </div>
+          <p class="job-description">Work across frontend and backend technologies to build web products.</p>
+          <button class="apply-btn" data-role="Full Stack Developer">Apply Now ↗</button>
+        </article>
+         <article class="job-card" data-category="Design"
+          data-location="Hyderabad" data-status="Remote">
+          <div class="job-card-top">
+            <div class="company-logo pink">C</div>
+            <span class="job-type remote">Full-time</span>
+          </div>
+          <h3>Python Developer</h3>
+          <p class="company-name">Syntraxs</p>
+          <div class="job-details">
+            <span>📍 Hyderabad</span><span>₹3–6 LPA</span>
+          </div>
+          <p class="job-description">Create batabase and managing backeend operations</p>
+          <button class="apply-btn" data-role="Python Developer">Apply Now ↗</button>
+        </article>
+         <article class="job-card" data-category="Design"
+          data-location="Hyderabad" data-status="Remote">
+          <div class="job-card-top">
+            <div class="company-logo pink">A</div>
+            <span class="job-type remote">Remote</span>
+          </div>
+          <h3>Front-End developer</h3>
+          <p class="company-name">Apple</p>
+          <div class="job-details">
+            <span>📍 Hyderabad</span><span>₹8–12 LPA</span>
+          </div>
+          <p class="job-description">creating user inter active website and bulding beautiful UI/Ux</p>
+          <button class="apply-btn" data-role="Front-End developer">Apply Now ↗</button>
+        </article>
+         <article class="job-card" data-category="Design"
+          data-location="Hyderabad" data-status="Remote">
+          <div class="job-card-top">
+            <div class="company-logo pink">D</div>
+            <span class="job-type remote">Full-time</span>
+          </div>
+          <h3>Data Analyst</h3>
+          <p class="company-name">Delliot</p>
+          <div class="job-details">
+            <span>📍 Mumbai</span><span>₹8–12 LPA</span>
+          </div>
+          <p class="job-description">Manting Data base and handing bussiness Queries</p>
+          <button class="apply-btn" data-role="Data Analyst">Apply Now ↗</button>
+        </article>
+        <article class="job-card" data-category="Design"
+          data-location="Hyderabad" data-status="Remote">
+          <div class="job-card-top">
+            <div class="company-logo pink">V</div>
+            <span class="job-type remote">Full-time</span>
+          </div>
+          <h3>Backend Developer</h3>
+          <p class="company-name">TCS</p>
+          <div class="job-details">
+            <span>📍 Hyderabd</span><span>₹3.8-6 LPA</span>
+          </div>
+          <p class="job-description">mataning data and manageing the backend server and envronment</p>
+          <button class="apply-btn" data-role="Backend Developer">Apply Now ↗</button>
+        </article>
+        
+
+      </div>
+
+      <div class="no-results" id="noResults" hidden>
+        <h3>No matching jobs found</h3>
+        <p>Try changing your search or filters.</p>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about-section container" id="about">
+      <div class="about-visual">
+        <div class="about-orbit"></div>
+        <div class="about-icon">✦</div>
+        <span>YOUR FUTURE</span>
+      </div>
+      <div class="about-content">
+        <span class="section-tag">WHY SYNTRAXS JOBS?</span>
+        <h2>Make Your Next <span>Career Move</span></h2>
+        <p>
+          Syntraxs Jobs helps candidates discover opportunities across
+          technology, design, marketing and business. Find a role that
+          matches your skills and ambitions.
+        </p>
+        <a href="#jobs" class="primary-button">Find Your Opportunity ↗</a>
+      </div>
+    </section>
+
+    <!-- Application Form -->
+    <section class="application-section container" id="apply">
+      <div class="application-heading">
+        <span class="section-tag">TAKE THE NEXT STEP</span>
+        <h2>Apply for Your <span>Dream Job</span></h2>
+        <p>Complete the form to submit your application.</p>
+      </div>
+
+      <form class="application-form" id="applicationForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="appName">Full Name *</label>
+            <input type="text" id="appName" name="name"
+              placeholder="Enter your name" required>
+          </div>
+          <div class="form-group">
+            <label for="appEmail">Email Address *</label>
+            <input type="email" id="appEmail" name="email"
+              placeholder="Enter your email" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="appPhone">Phone Number *</label>
+            <input type="tel" id="appPhone" name="phone"
+              placeholder="Enter your phone number"
+              pattern="[0-9+() -]{7,20}" required>
+          </div>
+          <div class="form-group">
+            <label for="appRole">Job Position *</label>
+            <input type="text" id="appRole" name="role"
+              placeholder="Select Apply Now on a job" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="resume">Upload Resume (PDF, DOC or DOCX) *</label>
+          <input type="file" id="resume" name="resume"
+            accept=".pdf,.doc,.docx" required>
+          <small id="fileNote">Maximum file size: 5 MB.</small>
+        </div>
+
+        <div class="form-group">
+          <label for="applicationMessage">Cover Message</label>
+          <textarea id="applicationMessage" name="message"
+            rows="4" placeholder="Tell us about yourself..."></textarea>
+        </div>
+
+        <button type="submit" class="primary-button submit-button">
+          Submit Application ↗
+        </button>
+        <p class="form-notice" id="formNotice" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <a href="#" class="logo">SYNTRAXS<span>JOBS</span></a>
+      <p>Connecting talent with opportunity.</p>
+      <span>© 2026 Syntraxs Jobs. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
